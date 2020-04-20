@@ -32,7 +32,7 @@ if [ -z "$1" ]; then
   exit
 fi
 
-apt install -y protobuf-compiler python2-pil python3-lxml\
+apt install -y protobuf-compiler python3-pil python3-lxml\
   python3-pip python3-dev git unzip
 
 pip3 install Cython
