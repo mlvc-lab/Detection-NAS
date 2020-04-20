@@ -57,6 +57,8 @@ DETECTION_CFG.override({
         'use_separable_conv': False,
         'init_drop_connect_rate': None,
         'block_fn': 'conv',
+        'min_level': 3,
+        'max_level': 7
     },
     'postprocess': {
         'apply_nms': True,
