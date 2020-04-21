@@ -1,6 +1,7 @@
 # this script installs requirements for the repository
 # based on April.10.2020
 apt-get update
+
 pip install tensorflow==1.15
 pip install tensorflow-gpu==1.15
 apt-get install -y python-tk

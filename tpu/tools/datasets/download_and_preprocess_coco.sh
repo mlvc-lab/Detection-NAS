@@ -33,6 +33,7 @@ if [ -z "$1" ]; then
 fi
 
 apt install -y protobuf-compiler python3-pil python3-lxml\
+
   python3-pip python3-dev git unzip
 
 pip3 install Cython
