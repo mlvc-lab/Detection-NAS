@@ -1,4 +1,5 @@
 MODEL_DIR="tpu/testmodels"
+RESNET_DIR="tpu/resnet50/resnet_v1_50.ckpt"
 mkdir $MODEL_DIR
 TFRECORD_FILE="coco/train-00255-of-00256.tfrecord"
 
@@ -9,4 +10,5 @@ python3 tpu/models/official/detection/main.py \
 --model_dir=$MODEL_DIR \
 --eval_after_training=False \
 --training_file_pattern=$TFRECORD_FILE \
+--RESNET_CHECKPOINT=$RESNET_DIR \
 --config_file=tpu/models/official/detection/configs/yaml/retinanet_nasfpn.yaml
